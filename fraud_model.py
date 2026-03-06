@@ -93,6 +93,8 @@ print(classification_report(y_test, y_pred_rf))
 
 print("\nROC AUC Score:")
 print(roc_auc_score(y_test, y_prob_rf))
+import os
+os.makedirs("results", exist_ok=True)
 from sklearn.metrics import average_precision_score
 
 print("\nPR-AUC (Logistic Regression):")
